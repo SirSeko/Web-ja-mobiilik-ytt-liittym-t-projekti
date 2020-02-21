@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/tyylit.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+    <title> Yhteystiedot </title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="/Pääsivu.html" class="active">Koti</a>
+        <a href="/Kytkimet.html">Kytkimet</a>
+        <a href="/Komponentit.html">Komponentit</a>
+        <a href="/KuvatJaVideot.html">Kuvat ja Videot</a>
+        <a href="/Yhteystiedot.html">Yhteystiedot</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <h1 id="otsikko">
+        Yhteystiedot
+    </h1>
+
+
+    <div class="kortti">
+        <i class="fa fa-user-circle" class="img-fluid" style="font-size:100px;"></i>
+        <div class="container">
+            <br>
+            <h2>Timo Peltier</h2>
+            <p>Tietotekniikan opiskelija</p>
+            <p>
+                Innokas näppäimistöjen rakentaja.<br> Commodo exercitation qui id est minim occaecat dolor adipisicing Lorem velit aliqua consequat laboris aliqua. Non nisi voluptate in sint veniam anim officia consectetur amet in. Dolor nisi aliqua reprehenderit
+                irure et labore aute laboris officia minim. Reprehenderit dolor mollit aute ut exercitation sunt incididunt.
+            </p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+        <p>Reprehenderit dolor mollit aute ut exercitation sunt incididunt.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14545.292120187869!2d27.613953351974473!3d62.88999641439787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4684ba7774f48751%3A0x6f1764f9e220a629!2sSavonia-ammattikorkeakoulu!5e0!3m2!1sfi!2sfi!4v1582207740267!5m2!1sfi!2sfi"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <hr>
+    <div>
+        <h2>Linkit</h2>
+        <p>Occaecat et incididunt anim occaecat laboris voluptate cupidatat exercitation.
+        </p>
+        <button class="button" onclick="window.location.href = '/Kytkimet.html';">Kytkimet</button>
+        <button class="button" onclick="window.location.href = '/Komponentit.html';">Komponentit</button>
+        <button class="button" onclick="window.location.href = '/KuvatJaVideot.html';">Kuvat ja Videot</button>
+        <button class="button" onclick="window.location.href = '/Yhteystiedot.html';">Yhteystiedot</button>
+        <button class="button" id="myButton" onclick="topFunction()">Takaisin Ylös</button>
+
+    </div>
+    <div class="footer">
+        <p>&copy Timo "SirSeko" Peltier</p>
+        <p>Kuopio 2020</p>
+    </div>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+
+</html>
